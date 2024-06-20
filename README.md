@@ -14,7 +14,7 @@
 
 The Chinese University of Hong Kong
 
-<sup>\*</sup> Equal Contributions, <sup>✉</sup> Corresponding Author. 
+<sup>\*</sup> Equal Contribution, <sup>✉</sup> Corresponding Author. 
 
 -------------------------------------------
 ![introduction](./assets/pipeline.png)
