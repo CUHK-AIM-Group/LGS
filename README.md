@@ -28,6 +28,8 @@ The Chinese University of Hong Kong
 
 ## 🛠Setup
 
+`submodules/simple_knn` can be download from [here](https://github.com/yifliu3/EndoGaussian/tree/master/submodules/simple-knn)
+
 ```bash
 git clone https://github.com/CUHK-AIM-Group/LGS.git
 cd LGS
