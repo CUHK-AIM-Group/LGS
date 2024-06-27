@@ -74,7 +74,7 @@ The file structure is as follows.
 ## ⏳Training LGS
 Run the following code to train LGS in a distillation scheme.
 ```bash
-cd /home/hyliu/code/Light_Distillation_deformation_new
+cd to this repo
 conda activate engs
 
 dataset="name/of/dataset"
@@ -85,8 +85,8 @@ check_point="/path/to/teacher/model/.ckpt"
 deformation_path="/path/to/teacher/model/"
 
 CUDA_VISIBLE_DEVICES=GPU_ID python train.py \
-    -s /data/hyliu/endonerf/cutting_tissues_twice/ \
-    -m /data/hyliu/endonerf-output/ \
+    -s /path/to/endonerf/cutting_tissues_twice/ \
+    -m /path/to/endonerf/endonerf-output/ \
     --expname $dataset/$test_name \
     --start_checkpoint $check_point \
     --deformatioin_model_path $deformation_path \
@@ -108,12 +108,12 @@ CUDA_VISIBLE_DEVICES=GPU_ID python train.py \
 Run the following code to render and get the evaluaton.
 
 ```bash
-CUDA_VISIBLE_DEVICES=4 python render.py --model_path /path/to/trained/model \
+CUDA_VISIBLE_DEVICES=GPU_ID python render.py --model_path /path/to/trained/model \
     --skip_train \
     --new_max_sh 2 \
     --configs $config_name > /path/to/log
 
-CUDA_VISIBLE_DEVICES=4 python metrics.py --model_path /path/to/trained/model > /path/to/log
+CUDA_VISIBLE_DEVICES=GPU_ID python metrics.py --model_path /path/to/trained/model > /path/to/log
 ```
 
 
