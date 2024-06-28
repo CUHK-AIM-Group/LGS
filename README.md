@@ -28,8 +28,8 @@ The Chinese University of Hong Kong
 
 ## 🛠Setup
 
-`submodules/simple_knn` can be download from [here](https://github.com/yifliu3/EndoGaussian/tree/master/submodules/simple-knn)
-`compress-diff-gaussian-rasterization` can be download from [compress-diff-gaussian-rasterization](https://github.com/Kevin-2017/compress-diff-gaussian-rasterization/tree/240618bbc5fb21c270a0c5babb292615011a2f15)
+- `submodules/simple_knn` can be download from [here](https://github.com/yifliu3/EndoGaussian/tree/master/submodules/simple-knn)
+- `compress-diff-gaussian-rasterization` can be download from [compress-diff-gaussian-rasterization](https://github.com/Kevin-2017/compress-diff-gaussian-rasterization/tree/240618bbc5fb21c270a0c5babb292615011a2f15)
 
 ```bash
 git clone https://github.com/CUHK-AIM-Group/LGS.git
