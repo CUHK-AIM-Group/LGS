@@ -143,9 +143,9 @@ Greatly appreciate the tremendous effort for the following projects!
 If you find this work helpful for your project,please consider citing the following paper:
 ```
 @article{liu2024lgs,
-  author    = {Hengyu Liu and Yifan Liu and Chenxin Li and Wuyang Li and Yixuan Yuan},
-  title     = {LGS: A Light-weight 4D Gaussian Splatting for Efficient Surgical Scene Reconstruction},
-  journal   = {arXiv preprint},
-  year      = {2024}
+  title={LGS: A Light-weight 4D Gaussian Splatting for Efficient Surgical Scene Reconstruction},
+  author={Liu, Hengyu and Liu, Yifan and Li, Chenxin and Li, Wuyang and Yuan, Yixuan},
+  journal={arXiv preprint arXiv:2406.16073},
+  year={2024}
 }
 ```
