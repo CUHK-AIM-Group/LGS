@@ -29,6 +29,7 @@ The Chinese University of Hong Kong
 ## 🛠Setup
 
 `submodules/simple_knn` can be download from [here](https://github.com/yifliu3/EndoGaussian/tree/master/submodules/simple-knn)
+`compress-diff-gaussian-rasterization` can be download from [compress-diff-gaussian-rasterization](https://github.com/Kevin-2017/compress-diff-gaussian-rasterization/tree/240618bbc5fb21c270a0c5babb292615011a2f15)
 
 ```bash
 git clone https://github.com/CUHK-AIM-Group/LGS.git
@@ -81,13 +82,13 @@ dataset="name/of/dataset"
 test_name="name/of/output/file"
 config_name="name/of/config"
 
-check_point="/path/to/teacher/model/.ckpt"
-deformation_path="/path/to/teacher/model/"
+check_point="/path/to/teacher/model/chkpntN.pth"
+deformation_path="/path/to/teacher/model/point_cloud/iteration_N"
 
 CUDA_VISIBLE_DEVICES=GPU_ID python train.py \
     -s /path/to/endonerf/cutting_tissues_twice/ \
     -m /path/to/endonerf/endonerf-output/ \
-    --expname $dataset/$test_name \
+    --expname $dataset/new_init/$test_name \
     --start_checkpoint $check_point \
     --deformatioin_model_path $deformation_path \
     --teacher_model $check_point \
@@ -99,9 +100,13 @@ CUDA_VISIBLE_DEVICES=GPU_ID python train.py \
     --prune_decay 0.6 \
     --prune_iterations 2000 \
     --prune \
+    --prune_threshold 0.5 \
     --prune_sh \
+    --prune_deform \
     --v_pow 0.1 \
-    --port 6036 > /path/to/log
+    --gt \
+    --port $port > /path/to/log
+
 ```
 
 ### 📏Metric Evaluation
@@ -137,6 +142,7 @@ Greatly appreciate the tremendous effort for the following projects!
 - [3D GS](https://github.com/graphdeco-inria/gaussian-splatting)
 - [4D GS](https://github.com/hustvl/4DGaussians)
 - [EndoNeRF](https://github.com/med-air/EndoNeRF)
+- [compress-diff-gaussian-rasterization](https://github.com/Kevin-2017/compress-diff-gaussian-rasterization/tree/240618bbc5fb21c270a0c5babb292615011a2f15)
 
 
 ## 📜Citation
