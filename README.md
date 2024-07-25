@@ -118,7 +118,7 @@ kplanes_config = {
   'resolution': [64, 64, 64, 100]
 }
 ```
-- (2) While training EndoGaussian, EndoGaussian's two saving processs are at different times, one before pruning the Gaussians and the other after pruning. Please refer to [here](https://github.com/CUHK-AIM-Group/LGS/issues/7) and get the consistant models.
+- (2) While training EndoGaussian, EndoGaussian's two saving processs are at different times, one before pruning the Gaussians and the other after pruning. Please refer to [here](https://github.com/CUHK-AIM-Group/LGS/issues/7) and get the consistent models.
 
 ### 📏Metric Evaluation
 Run the following code to render and get the evaluaton.
