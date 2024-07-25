@@ -108,6 +108,17 @@ CUDA_VISIBLE_DEVICES=GPU_ID python train.py \
     --port $port > /path/to/log
 
 ```
+Notice:
+- (1) Teacher Model is a trained [EndoGaussian](https://github.com/yifliu3/EndoGaussian) model, while the size of the deformation filed of teacher model should be set the same as LGS:
+```
+kplanes_config = {
+  'grid_dimensions': 2,
+  'input_coordinate_dim': 4,
+  'output_coordinate_dim': 64,
+  'resolution': [64, 64, 64, 100]
+}
+```
+- (2) While training EndoGaussian, EndoGaussian's two saving processs are at different times, one before pruning the Gaussians and the other after pruning. Please refer to [here](https://github.com/CUHK-AIM-Group/LGS/issues/7) and get the consistant models.
 
 ### 📏Metric Evaluation
 Run the following code to render and get the evaluaton.
