@@ -4,7 +4,7 @@
 
 
 ### [Project Page](https://lgs-endo.github.io/) | [ArXiv Paper](https://arxiv.org/abs/2406.16073)
-### Accepted by International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2024)
+### Accepted by International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2024 poster)
 
 [Hengyu Liu](https://github.com/LiuHengyu321)<sup>\*</sup>, 
 [Yifan Liu](https://yifliu3.github.io/)<sup>\*</sup>,
