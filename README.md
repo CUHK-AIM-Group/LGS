@@ -127,6 +127,7 @@ Run the following code to render and get the evaluaton.
 CUDA_VISIBLE_DEVICES=GPU_ID python render.py --model_path /path/to/trained/model \
     --skip_train \
     --new_max_sh 2 \
+    --prune_deform \
     --configs $config_name > /path/to/log
 
 CUDA_VISIBLE_DEVICES=GPU_ID python metrics.py --model_path /path/to/trained/model > /path/to/log
